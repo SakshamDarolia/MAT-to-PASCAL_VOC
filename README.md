@@ -1,5 +1,5 @@
 # MAT-to-PASCAL_VOC
-An easy way to convert images annotated in MATLAB to a Pascal VOC 2007 dataset format. This way you can have your own custom dataset containing your own classes and images.
+An easy way to convert images annotated in MATLAB to a Pascal VOC 2007 dataset format. This way you can have your own custom dataset containing your own classes and images. At the end of this process, 'VOCdevkit2007' directory will be containing the created custom dataset. It is basically a format of PascalVOC2007 but containing self specified classes and images.
 
 ## Ways to convert .mat annotation file to csv:
 - Export the .mat annotation file as .mat labels file from the option provided in MATLAB.
@@ -60,3 +60,5 @@ This code,
 ### OR
 
   Run create_random.ipynb to select random images for test and train. Works same as create.ipynb just selects images randomly.
+
+After these steps you can place the 'VOCdevkit2007' directory with any model that supports PascalVOC2007.
